@@ -28,16 +28,13 @@ const PRODUCTS = [
   { id: 23, title: "Budget Smartphone 4GB RAM 64GB",              cat: "mobiles",      emoji: "📞", price: 8999,  mrp: 12999, rating: 4.0, reviews: "6,789",  assured: false },
   { id: 24, title: "Microwave Oven 20L Convection",                cat: "appliances",   emoji: "🍽️", price: 6999,  mrp: 10999, rating: 4.2, reviews: "1,998",  assured: true },
 ];
-
 const DEAL_IDS = [5, 17, 22, 7, 19, 2];
-
 /* =
    STATE
 = */
 let cart = {};          // { productId: qty }
 let activeCategory = "all";
 let searchQuery = "";
-
 /* =
    DOM REFS
 = */
@@ -54,18 +51,15 @@ const cartDrawer     = document.getElementById("cartDrawer");
 const cartOverlay    = document.getElementById("cartOverlay");
 const toast          = document.getElementById("toast");
 const searchInput    = document.getElementById("searchInput");
-
 /* =
    RENDER: PRODUCT CARD
 =*/
 function formatINR(n) {
   return "₹" + n.toLocaleString("en-IN");
 }
-
 function discountPct(price, mrp) {
   return Math.round(((mrp - price) / mrp) * 100);
 }
-
 function createProductCard(p) {
   const card = document.createElement("div");
   card.className = "product-card";
