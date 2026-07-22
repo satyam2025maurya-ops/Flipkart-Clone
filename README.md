@@ -6,7 +6,7 @@ A modern, responsive e-commerce front-end clone of Flipkart built from scratch u
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Flipkart Clone](https://satyam2025maurya-ops.github.io/Flipkart-Clone/)**
+🔗 **[View Live Flipkart Clone](https://satyam2025maurya-ops.github.io/Flipkart-Clone/)
 
 ---
 
